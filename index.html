@@ -17,6 +17,18 @@
         header {
             margin-bottom: 40px;
         }
+
+        .tip {
+            padding: 7px;
+            background: #333;
+            color: white;
+        }
+
+        .tip .delete {
+
+            color: rgb(216, 23, 119);
+            font-size: 0.2 em;
+        }
     </style>
 </head>
 
@@ -29,14 +41,14 @@
         <div class="row">
             <div class="col s12 m6">
                 <form class="card z-depth-0">
-                    <div class="card-content"> <span class="card-title indigo-text"> Add Item:</span>
+                    <div class="card-content"> <span class="card-title indigo-text"> Dodaj Trosak :</span>
                         <div class="input-field">
                             <input type="text" id="name">
-                            <label for="name">item name</label>
+                            <label for="name">Naziv Troska</label>
                         </div>
                         <div class="input-field">
                             <input type="text" id="cost">
-                            <label for="name">item cost (Kn)</label>
+                            <label for="name">Trosak ($)</label>
                         </div>
                         <div class="input-field center">
                             <button class="btn-large pink white-text">add item</button>
@@ -74,6 +86,8 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
     <script src="index.js"></script>
     <script src="graph.js"></script>
 </body>
